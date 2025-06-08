@@ -1,0 +1,14 @@
+/* src/styles/UserDashboard.module.css */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff3e0;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 87, 34, 0.2);
+}
+
+h1 {
+  color: #ff5722;
+  margin-bottom: 15px;
+}

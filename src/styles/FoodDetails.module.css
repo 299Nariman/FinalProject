@@ -1,0 +1,73 @@
+/* src/styles/FoodDetails.module.css */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 15px;
+}
+
+.image {
+  flex: 1 1 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.info {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 15px 0;
+  color: #ff5722;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.qty input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .image, .info {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,106 @@
+/* src/styles/Basket.module.css */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8e1;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #ffb300;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.basketItem {
+  display: flex;
+  align-items: center;
+  background-color: #fff3e0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.basketItem:hover {
+  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.35);
+}
+
+.basketItem img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.basketItem div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.basketItem h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ff6f00;
+  font-weight: 700;
+}
+
+.basketItem p {
+  margin: 0;
+  color: #6d4c41;
+  font-size: 0.95rem;
+}
+
+.basketItem button {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border: none;
+  background-color: #ff6f00;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  margin-top: 10px;
+}
+
+.basketItem button:hover {
+  background-color: #e65100;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .basketItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .basketItem img {
+    margin-bottom: 12px;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .basketItem button {
+    align-self: stretch;
+    text-align: center;
+  }
+}

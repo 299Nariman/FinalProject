@@ -1,0 +1,117 @@
+/* src/styles/AdminPanel.module.css */
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: #fff8e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5d4037;
+}
+
+h1 {
+  color: #ff9800;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.form input {
+  flex: 1 1 200px;
+  padding: 10px 15px;
+  border: 2px solid #ffb74d;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 6px #ff9800aa;
+}
+
+.form button {
+  background-color: #ff9800;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  flex: 1 1 150px;
+}
+
+.form button:hover {
+  background-color: #ef6c00;
+}
+
+/* Product list */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  background-color: #fff3e0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+  box-shadow: 0 4px 20px rgba(255, 152, 0, 0.3);
+}
+
+li img {
+  width: 90px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+li div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+  color: #6d4c41;
+}
+
+li button {
+  background-color: #d84315;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #bf360c;
+}
